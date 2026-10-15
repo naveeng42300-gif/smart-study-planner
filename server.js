@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 let tasks;
 let users;
-
+app.set("trust proxy", 1);
 app.use(session({
     name: "studyPlanner.sid",
     secret: process.env.SESSION_SECRET,
@@ -31,7 +31,7 @@ app.use(session({
     cookie: {
         httpOnly: true,
         sameSite: "lax",
-        secure: false,
+        secure: process.env.NODE_ENV === "production",
         maxAge: 1000 * 60 * 60 * 24
     }
 }));
