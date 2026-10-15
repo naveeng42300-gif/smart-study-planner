@@ -1,0 +1,66 @@
+
+body {
+    background: #f4f7fc;
+    font-family: Arial, sans-serif;
+    color: #243047;
+}
+
+.app-header {
+    background: linear-gradient(135deg, #3157d5, #7448c8);
+    color: white;
+    padding: 35px 20px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 18px rgba(30, 50, 90, 0.08);
+}
+
+.form-control {
+    padding: 12px;
+}
+
+.btn-primary {
+    background: #405de6;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #3049bd;
+}
+
+.progress {
+    height: 12px;
+    border-radius: 10px;
+}
+
+.task-item {
+    border-radius: 10px !important;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.completed-task {
+    opacity: 0.65;
+    text-decoration: line-through;
+}
+
+.stat-card {
+    padding: 20px;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #405de6;
+}
+
+@media (max-width: 576px) {
+    .app-header {
+        padding: 25px 15px;
+    }
+}
